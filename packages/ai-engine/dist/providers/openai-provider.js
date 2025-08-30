@@ -1,5 +1,5 @@
 import OpenAI from 'openai';
-import { generateAnalysisPrompt, generateSuggestionPrompt, generateExplanationPrompt } from '../prompts';
+import { generateAnalysisPrompt, generateSuggestionPrompt, generateExplanationPrompt } from '../prompts.js';
 export class OpenAIProvider {
     constructor(config) {
         Object.defineProperty(this, "client", {

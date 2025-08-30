@@ -1,6 +1,6 @@
 import OpenAI from 'openai';
-import { AIProvider, AIContext, AIAnalysis, AIProviderConfig } from '../types';
-import { generateAnalysisPrompt, generateSuggestionPrompt, generateExplanationPrompt } from '../prompts';
+import { AIProvider, AIContext, AIAnalysis, AIProviderConfig } from '../types.js';
+import { generateAnalysisPrompt, generateSuggestionPrompt, generateExplanationPrompt } from '../prompts.js';
 
 export class OpenAIProvider implements AIProvider {
   private client: OpenAI;

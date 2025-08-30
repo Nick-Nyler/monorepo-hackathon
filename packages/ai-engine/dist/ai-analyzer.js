@@ -1,4 +1,5 @@
-import { OpenAIProvider } from './providers/openai-provider';
+import { OpenAIProvider } from './providers/openai-provider.js';
+import { MockProvider } from './providers/mock-provider.js';
 export class AIAnalyzer {
     constructor(options = { provider: 'openai' }) {
         Object.defineProperty(this, "providers", {
@@ -19,6 +20,11 @@ export class AIAnalyzer {
         this.initializeProviders();
     }
     initializeProviders() {
+        // Add Mock provider for testing
+        this.providers.set('mock', new MockProvider({
+            apiKey: 'mock-key',
+            model: 'mock-model'
+        }));
         // Add OpenAI provider if API key is available
         if (process.env.OPENAI_API_KEY) {
             this.providers.set('openai', new OpenAIProvider({

@@ -1,4 +1,4 @@
-import { AIContext, AIAnalysis, AIAnalysisOptions } from './types';
+import { AIContext, AIAnalysis, AIAnalysisOptions } from './types.js';
 export declare class AIAnalyzer {
     private providers;
     private defaultProvider;

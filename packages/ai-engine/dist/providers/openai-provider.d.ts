@@ -1,4 +1,4 @@
-import { AIProvider, AIContext, AIAnalysis, AIProviderConfig } from '../types';
+import { AIProvider, AIContext, AIAnalysis, AIProviderConfig } from '../types.js';
 export declare class OpenAIProvider implements AIProvider {
     private client;
     private config;
