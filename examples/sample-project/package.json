@@ -1,0 +1,13 @@
+{
+  "name": "sample-project",
+  "version": "1.0.0",
+  "description": "Sample JavaScript project for testing the code analyzer",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["sample", "javascript", "testing", "code-analyzer"],
+  "author": "Hackathon Team",
+  "license": "MIT"
+}

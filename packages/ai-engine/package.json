@@ -1,0 +1,28 @@
+{
+  "name": "@code-analyzer/ai-engine",
+  "version": "1.0.0",
+  "description": "AI integration layer for intelligent code analysis",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src/**/*.ts",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@code-analyzer/core": "workspace:*",
+    "openai": "^4.20.0",
+    "@anthropic-ai/sdk": "^0.9.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.0"
+  }
+}
